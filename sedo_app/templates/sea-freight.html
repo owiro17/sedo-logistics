@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block head %}
+  <meta name="description" content="Experience seamless global logistics with Sedo Logistics' Ocean Freight Services. Tailored solutions, cost-saving alternatives, reliable partnerships">
+{% endblock head %}
+{% block title %}
+Sea Freight
+{% endblock title %}
+
+{% block content %}
+<div class="title-wrapper" id="sea-title-wrapper">
+  <h1 data-aos="fade-up"  data-aos-duration="1500" data-aos-easing="ease">Sea Freight</h1>
+  <p>Delivering Waves Of Efficiency</p>
+</div>
+<section class="service-wrapper" id="air-service">
+  <div class="service-title">
+    <img src="/sedo_main/sedo_app/static/img/sea.jpg" alt="" class="service-logo">
+    <h1>Sea Frieght</h1>
+
+  </div>
+  <hr>
+  <div class="service-content">
+    <p>Experience seamless global logistics with Sedo Logistics' Ocean Freight Services. Specializing in FCL, LCL, Break-Bulk, and Project Cargo, we provide tailored solutions worldwide. Benefit from cost-effective alternatives, door-to-door supply chain solutions, and strong partnerships with global carriers. Trust our expertise, timely communication, and transparent service for optimized shipping and value-driven solutions.</p>
+
+      <h3>Our Sea Frieght Services Include :</h3>
+     
+      <ul>
+        <li>Import and export</li>
+        <li>Issuance and verification of shipping documentation</li>
+        <li>Export and import customs clearance</li>
+        <li>Certified industrial packing and crating</li>
+        <li>Packing and crating of household goods</li>
+        <li>Warehousing, assembly and distribution logistics</li>
+        <li>Letter of credit processing</li>
+        <li>Part & full vessel charter</li>
+        <li>Conventional shipments (break-bulk, dry & liquid bulk)</li>
+        <li>Sea/Air transportation</li>
+        <li>Sea/Road and Sea/Rail Intermodal Services</li>
+        <li>Transport and Marine Insurance</li>
+      </ul>
+      <div class="why-sedo-wrapper">
+        <h1>Why Sedo Logistcs Limited?</h1>
+        <p>Sedo Logistics Limited, a leading customs broker, is primed to meet the increasing demands of the global market. With strong relationships with government agencies, Sedo has the edge in negotiating complex consignments and navigating bureaucratic procedures. Their well-trained staff takes full responsibility for timely and accurate documentation, preventing costly delays and storage charges for consignees. Trust Sedo Logistics Limited for seamless customs clearance and efficient supply chain management.</p>
+        
+      </div>
+  </div>
+
+  <div class="contact-message-wrapper">
+    <h1 class="contact-message">We Are Looking Forward To Working With You</h1>
+    <a href="/contactUs/" class="contact-us-service">Contact Us</a>
+  </div>
+
+
+</section>
+ <script>
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      const scrolled = window.pageYOffset || document.documentElement.scrollTop;
+  
+      if (scrolled > 0) {
+        navbar.classList.add('navbar-scroll');
+      } else {
+        navbar.classList.remove('navbar-scroll');
+      }
+    });
+        //------------------------------------------------loader-------------------------------
+        window.addEventListener("load", function() {
+          document.querySelector(".loader").style.display = "none";
+        });
+        
+        document.querySelector(".loader").style.display = "block";
+        
+  </script>
+{% endblock content %}

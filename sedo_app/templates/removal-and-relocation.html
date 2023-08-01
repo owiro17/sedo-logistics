@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}
+Removal & Relocation
+{% endblock title %}
+
+{% block content %}
+<div class="title-wrapper" id="Removal-relocation-service">
+  <h1 data-aos="fade-up"  data-aos-duration="1500" data-aos-easing="ease">Removal & Relocation</h1>
+</div>
+<section class="service-wrapper" >
+  <div data-aos="fade-up"  data-aos-duration="1500" data-aos-easing="ease" class="service-title">
+    <img src="/sedo_main/sedo_app/static/img/cargo.jpg" alt="" class="service-logo" data-aos="fade-right"  data-aos-duration="1500" data-aos-easing="ease">
+    <h1 data-aos="fade-up"  data-aos-duration="1500" data-aos-easing="ease">Removal & Relocation</h1>
+  </div>
+  <hr>
+  <div data-aos="fade"  data-aos-duration="1500" data-aos-easing="ease" class="service-content">
+    <p> Sedo Logistics is truly an international single source for worldwide moving services. Whether it’s household goods, your family pet, your professional equipment or your car, we have global resources and expertise to plan and co-ordinate all aspects of your moving requirements.
+
+      You will receive professional, courteous, and trouble-free service throughout the process. From start to finish, a highly-skilled and dedicated Sedo Removal Supervisor and Move Manager will carefully manage and coordinate the removal of household goods, vehicles, and pets.
+      
+      Sedo's worldwide network ensures total security and peace of mind all times.     
+      </p>
+      <h3>Our Removal & Relocation Services Include :</h3>
+      <ul>
+        <li data-aos="fade" data-aos-duration="1000" data-aos-easing="ease">Pre-move survey and assessment</li>
+        <li data-aos="fade" data-aos-duration="1000" data-aos-easing="ease">Packing and crating of household goods</li>
+        <li data-aos="fade" data-aos-duration="1000" data-aos-easing="ease">Special handling of art work and antiques</li>
+        <li data-aos="fade" data-aos-duration="1000" data-aos-easing="ease">Assembly & disassembly of complex furniture</li>
+        <li data-aos="fade" data-aos-duration="1000" data-aos-easing="ease">Handling & crating of heavy items</li>
+        <li data-aos="fade" data-aos-duration="1000" data-aos-easing="ease">Handyman & 3rd party services</li>
+        <li data-aos="fade" data-aos-duration="1000" data-aos-easing="ease">Worldwide door-to-door service</li>
+        <li data-aos="fade" data-aos-duration="1000" data-aos-easing="ease">Worldwide pet relocation service</li>
+        <li data-aos="fade" data-aos-duration="1000" data-aos-easing="ease">Worldwide transit insurance</li>
+        <li data-aos="fade" data-aos-duration="1000" data-aos-easing="ease">Worldwide auto transportation</li>
+        <li data-aos="fade" data-aos-duration="1000" data-aos-easing="ease">Office moving and relocation</li>
+      </ul>
+      <div data-aos="fade" class="why-sedo-wrapper">
+        <h1>Why Sedo Logistcs Limited?</h1>
+        <p>Sedo Logistics Limitedlimited, a leading customs broker, is primed to meet the increasing demands of the global market. With strong relationships with government agencies, Sedo has the edge in negotiating complex consignments and navigating bureaucratic procedures. Their well-trained staff takes full responsibility for timely and accurate documentation, preventing costly delays and storage charges for consignees. Trust Sedo Logistics Limited for seamless customs clearance and efficient supply chain management.</p>
+        
+      </div>
+  </div>
+
+  <div data-aos="fade" class="contact-message-wrapper">
+    <h1 class="contact-message">We Are Looking Forward To Working With You</h1>
+    <a href="/contactUs/" class="contact-us-service">Contact Us</a>
+  </div>
+
+
+</section>
+
+ <script>
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      const scrolled = window.pageYOffset || document.documentElement.scrollTop;
+  
+      if (scrolled > 0) {
+        navbar.classList.add('navbar-scroll');
+      } else {
+        navbar.classList.remove('navbar-scroll');
+      }
+    });
+        //------------------------------------------------loader-------------------------------
+        window.addEventListener("load", function() {
+          document.querySelector(".loader").style.display = "none";
+        });
+        
+        document.querySelector(".loader").style.display = "block";
+        
+  </script>
+{% endblock content %}

@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block head %}
+  <meta name="description" content="Sedo Logistics Limited offers tailored air freight solutions with precision handling, real-time updates, expertise in oversized cargo, and a focus on efficiency and reliability, providing exceptional logistics services that meet clients' unique needs.">
+{% endblock head %}
+{% block title %}
+Air Freight
+{% endblock title %}
+
+{% block content %}
+<div class="title-wrapper" id="air-frieght-title-wrapper">
+  <h1 data-aos="fade-up"  data-aos-duration="1500" data-aos-easing="ease">Air Frieght</h1>
+  <p>Sky-high solutions, tailored for your needs.</p>
+</div>
+
+<section class="service-wrapper" id="air-service">
+  <div class="service-title">
+    <img src="/sedo_main/sedo_app/static/img/air_freight.jpg" alt="" class="service-logo">
+    <h1>Air Frieght</h1>
+
+  </div>
+  <hr>
+  <div class="service-content">
+    <p>Sedo Logistics Limited specializes in tailored airfreight services, meeting unique needs with precision. Our dedicated Airfreight Department ensures a seamless and high-quality experience for sensitive and valuable goods. With real-time updates on shipments and expertise in oversized cargo transportation, we provide efficient and reliable global airfreight solutions</p>
+
+
+
+      <h3>Our Air Frieght Services Include :</h3>
+      <h3>Complete Logistics Programs (pick, pack, assembly, warehousing, documentation and handling) for:</h3>
+      <ul>
+
+        <li>Hazardous Cargo</li>
+        <li>Live Stock Cargo</li>
+        <li>AOG & Aerospace Cargo</li>
+        <li>Fashion & Luxury Goods</li>
+        <li>Auto and Automotive part</li>
+        <li>Oil & Gas Industry Cargo Pharmaceutical Cargo </li>
+        <li>Precious Metal Cargo </li>
+      </ul>
+      <h3>Other Services:</h3>
+      <ul>
+        <li>Import/Export </li>
+        <li>Pick, Pack, Assembly and Distribution</li>
+        <li>Split and Full Air Charter</li>
+        <li>Worldwide Door to Door Services</li>
+        <li>Sea/Air & Road/Air Service</li>
+        <li>Customs Clearance Service</li>
+        <li>Pick-up and Delivery Service</li>
+        <li>Packing and Crating</li>
+      </ul>
+
+      </ul>
+      <div class="why-sedo-wrapper">
+        <h1>Why Sedo Logistcs Limited?</h1>
+        <p>Sedo Logistics Limited, a leading customs broker, is primed to meet the increasing demands of the global market. With strong relationships with government agencies, Sedo has the edge in negotiating complex consignments and navigating bureaucratic procedures. Their well-trained staff takes full responsibility for timely and accurate documentation, preventing costly delays and storage charges for consignees. Trust Sedo Logistics Limitedfor seamless customs clearance and efficient supply chain management.</p>
+        
+      </div>
+  </div>
+
+  <div class="contact-message-wrapper">
+    <h1 class="contact-message">We Are Looking Forward To Working With You</h1>
+    <a href="/contactUs/" class="contact-us-service">Contact Us</a>
+  </div>
+
+
+</section>
+
+ <script>
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      const scrolled = window.pageYOffset || document.documentElement.scrollTop;
+  
+      if (scrolled > 0) {
+        navbar.classList.add('navbar-scroll');
+      } else {
+        navbar.classList.remove('navbar-scroll');
+      }
+    });
+        //------------------------------------------------loader-------------------------------
+        window.addEventListener("load", function() {
+          document.querySelector(".loader").style.display = "none";
+        });
+        
+        document.querySelector(".loader").style.display = "block";
+        
+  </script>
+{% endblock content %}

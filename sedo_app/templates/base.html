@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ac8fda2758.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Kadwa:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/sedo_main/sedo_app/static/img/web logo.png" type="image/png">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    {% block head %}
+    
+    {% endblock head%}
+    <title>
+    {% block title %}
+      
+    {% endblock title %}
+    </title>
+</head>
+<body>
+    <div class="loader">
+        <div class="justify-content-center jimu-primary-loading"></div>
+      </div>
+    <div class="nav-bar-section" id="navbar">
+        <div class="logo">
+            <img src="/sedo_main/sedo_app/static/img/sedo_logo.png" alt="logo" class="hide-bg">
+        </div>
+        <div class="nav-bar-wrapper">
+            <nav>
+                
+                <div class="nav-link" id="navLink">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <div class="drop-down">
+                            <li><a class="ourservices">Our services</a></li>
+                            <div class="service-links" id="service-Link">
+                                <a href="/air-freight/">Air freight</a>
+                                <a href="/sea-freight/">Sea freight</a>
+                                <a href="/rail-freight/">Rail freight</a>
+                                <a href="/road-freight/">Road freight</a>
+                                <a href="/project-logistics/">Project logistics</a>
+                                <a href="/cargo-insuarance/">Cargo insuarance</a>
+                                <a href="/customs-clearance/">Customs clearance</a>
+                                <a href="/removal/">Removal & Relocation</a>
+                                <a href="/warehouse-management/">Warehouse management</a>
+                            </div>
+                        </div>
+                        <li><a href="/about_us/">About us</a> </li>
+                        <!-- <li><a href="/login/">Log In</a> </li> -->
+                        <!-- <li><a href="/signup/">Sign Up</a> </li> -->
+                    </ul>
+                    <a href="/contactUs/" id="contact-us">Contact us</a>
+                </div>
+
+            </nav>
+        </div>
+
+        <span class="material-symbols-outlined" onclick="showmenu()" id="menu"><img src="/sedo_main/sedo_app/static/img/menu.svg" alt=""></span>
+    </div>
+
+    <div id="navbar-phone">
+        <div class="nav-phone-link" id="navPhoneLink">
+            <div class="nav-phone-bar">
+                <img src="/sedo_main/sedo_app/static/img/sedo logo.png" alt="logo" class="logo-phone">
+                <span class="material-symbols-outlined" onclick="showmenu()" ><img id="close"src="/sedo_main/sedo_app/static/img/close.svg" alt=""></span>
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about_us/">About us</a> </li>
+                <li><a href="/contactUs/">Contact us</a></li>
+                <h2 class="phone-title" id="services">Freight Services</h2>
+                <li><a href="/air-freight/">Air freight</a></li>
+                <li><a href="/sea-freight/">Sea freight</a></li>
+                <li><a href="/rail-freight/">Rail freight</a></li>
+                <li><a href="/road-freight/">Road freight</a></li>
+                <h2 class="phone-title">Other Services</h2>
+                <li><a href="/project-logistics/">Project logistics</a></li>
+                <li><a href="/cargo-insuarance/">Cargo insuarance</a></li>
+                <li><a href="/customs-clearance/">Customs clearance</a></li>
+                <li><a href="/removal/">Removal & Relocation</a></li>
+                <li><a href="/warehouse-management/">Warehouse management</a></li>
+
+
+            </ul>
+
+        </div>
+    </div>
+    {% block content %}
+
+    {% endblock content %} 
+    <section class="footer-container">
+        <!-- <div class="center-logo">
+
+          
+        </div> -->
+        <div class="useful-link-wrapper">
+            <ul>
+                <h2>Useful links</h2>
+                <li><a href="/">Home</a></li>
+                <li><a href="/ourservices">Our services</a></li>
+                <li><a href="/about_us/">About us</a> </li>
+                <li><a href="">Login</a> </li>
+                <li><a href="">Sign up</a> </li>
+                <li><a href="/contactUs/">Contact us</a> </li>
+            </ul>
+            
+            <ul>
+              <h2>Freight services</h2>
+              <li><a href="/air-freight/">Air freight</a></li>
+              <li><a href="/sea-freight/">Sea freight</a></li>
+              <li><a href="/rail-freight/">Rail freight</a></li>
+              <li><a href="/road-freight/">Road freight</a></li>
+            </ul>  
+            <ul>
+              <h2>Other Services</h2>
+              <li><a href="/project-logistics/">Project logistics</a></li>
+              <li><a href="/cargo-insuarance/">Cargo insuarance</a></li>
+              <li><a href="/customs-clearance/">Customs clearance</a></li>
+              <li><a href="/removal/">Removal & Relocation</a></li>
+              <li><a href="/warehouse-management/">Warehouse management</a></li>
+            </ul>     
+            <div class="contact-details-wrapper">
+              <h2>Get in touch</h2>
+              <div class="contact-group">
+                  <img src="/sedo_main/sedo_app/static/img/location-dot-solid.svg" alt="location:">
+                  <p>KCB Building,Enterprise Rd, Nairobi</p>
+              </div>
+              <div class="contact-group">
+                  <img src="/sedo_main/sedo_app/static/img/envelope-solid.svg" alt="email:">
+                  <p>info@sedologistics.co.ke</p>
+              </div>
+              <div class="contact-group">
+                  <img src="/sedo_main/sedo_app/static/img/phone-solid.svg" alt="phone:">
+                  <p>+254 722973090</p>
+              </div>
+              
+          </div>
+        
+        </div>
+        <p id="copyright-footer">copyright © 2023 • All rights reserved • Sedo logistcs limited</p>
+
+
+        
+    </section>
+
+<script>
+    //------------aos------------ -->
+    AOS.init({
+        duration:1000,
+        disable: function() {
+          var maxWidth = 900;
+          return window.innerWidth < maxWidth;
+        }
+      });
+    //---------------------------auto text
+    function typeWriter(id, delay) {
+      const text = document.getElementById(id).textContent;
+      let i = 0;
+      const speed = 50;
+    
+      function type() {
+        if (i < text.length) {
+          document.getElementById(id).innerHTML += text.charAt(i);
+          i++;
+          setTimeout(type, speed);
+        }
+      }
+    
+      document.getElementById(id).innerHTML = "";
+      setTimeout(type, delay);
+    }
+    
+    typeWriter("typing-text-1", 3000);
+    typeWriter("typing-text-2", 6000);
+    typeWriter("typing-text-3", 9000);
+
+    // Function to add or remove the background class based on scroll position
+    window.addEventListener('scroll', function() {
+        const navbar = document.getElementById('navbar');
+        const scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        const dropdown = document.getElementById('service-Link')
+        if(scrolled > 0){
+            dropdown.classList.add('dropdown-scroll')
+        } else{
+            dropdown.classList.remove('dropdown-scroll')
+        }
+        if (scrolled > 0) {
+          navbar.classList.add('navbar-scroll');
+        } else {
+          navbar.classList.remove('navbar-scroll');
+        }
+      });
+    //javascript for navbar menu
+    function showmenu() {
+        var x = document.getElementById("navPhoneLink");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+
+        }else if(x.style.display === "block"){
+          x.style.display= "none";
+      }else{
+          x.style.display="block";
+        }
+      }
+      //-------------------------------------------splide---------------------------------
+      new Splide( '.splide', {
+        type:'loop',
+        perPage: 1,
+        autoplay : 'True',
+        interval: 5500,
+        pauseOnHover :'True',
+        keyboard:'True',
+        drag:'True',
+        lazyLoad:'nearby',
+        easing:'cubic-bezier(0.25, 1, 0.5, 1)',
+      } ).mount();
+    //------------------------------------------------loader-------------------------------
+      window.addEventListener("load", function() {
+        document.querySelector(".loader").style.display = "none";
+      });
+      
+      document.querySelector(".loader").style.display = "block";
+      
+  </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}
+Cargo-Insuarance
+{% endblock title %}
+
+{% block content %}
+<div class="title-wrapper" id="cargo-title-wrapper">
+  <h1 data-aos="fade-up"  data-aos-duration="1500" data-aos-easing="ease">Cargo Insuarance</h1>
+</div>
+<section class="service-wrapper" id="cargo-insuarance-service">
+  <div data-aos="fade-up"  data-aos-duration="1500" data-aos-easing="ease" class="service-title">
+    <img src="/sedo_main/sedo_app/static/img/cargo.jpg" alt="" class="service-logo" data-aos="fade-right"  data-aos-duration="1500" data-aos-easing="ease">
+    <h1 data-aos="fade-up"  data-aos-duration="1500" data-aos-easing="ease">Cargo Insuarance</h1>
+  </div>
+  <hr>
+  <div data-aos="fade"  data-aos-duration="1500" data-aos-easing="ease" class="service-content">
+    <p>      As the saying goes: "It's better to be safe than sorry".
+
+      We arrange for comprehensive cargo insurance covers both in transit and within the storage facilities. 
+      
+      Sedo's dedicated Risk Management team offers competitive rates for “All Risk” insurance coverage on a global scale. Sedo Logistics is able to offer advice concerning insurance services for all type of cargoes ranging from household goods, personal effects, live-stock, to commercial goods.  
+      </p>
+      <h3>Our Cargo Insurance Services Include :</h3>
+      <ul>
+        <li data-aos="fade" data-aos-duration="1000" data-aos-easing="ease">“All Risk” cargo and marine insurance</li>
+        <li data-aos="fade" data-aos-duration="1000" data-aos-easing="ease">Auto transportation cover</li>
+        <li data-aos="fade" data-aos-duration="1000" data-aos-easing="ease">Livestock transportation cover</li>
+        <li data-aos="fade" data-aos-duration="1000" data-aos-easing="ease">High value goods and fine art transport cover</li>
+        <li data-aos="fade" data-aos-duration="1000" data-aos-easing="ease">Household Goods and personal effect transportation cover</li>
+        <li data-aos="fade" data-aos-duration="1000" data-aos-easing="ease">3rd party liability coverage</li>
+        <li data-aos="fade" data-aos-duration="1000" data-aos-easing="ease">E&O coverage</li>
+        <li data-aos="fade" data-aos-duration="1000" data-aos-easing="ease">Professional liability coverage</li>
+        <li data-aos="fade" data-aos-duration="1000" data-aos-easing="ease">Professional cargo surveying</li>
+        <li data-aos="fade" data-aos-duration="1000" data-aos-easing="ease">Pre shipment inspection</li>
+      </ul>
+      <div data-aos="fade" class="why-sedo-wrapper">
+        <h1>Why Sedo Logistcs Limited?</h1>
+        <p>Sedo Logistics Limitedlimited, a leading customs broker, is primed to meet the increasing demands of the global market. With strong relationships with government agencies, Sedo has the edge in negotiating complex consignments and navigating bureaucratic procedures. Their well-trained staff takes full responsibility for timely and accurate documentation, preventing costly delays and storage charges for consignees. Trust Sedo Logistics Limited for seamless customs clearance and efficient supply chain management.</p>
+        
+      </div>
+  </div>
+
+  <div data-aos="fade" class="contact-message-wrapper">
+    <h1 class="contact-message">We Are Looking Forward To Working With You</h1>
+    <a href="/contactUs/" class="contact-us-service">Contact Us</a>
+  </div>
+
+
+</section>
+
+
+ <script>
+    window.addEventListener('scroll', function(){
+      const navbar = document.getElementById('navbar');
+      const scrolled = window.pageYOffset || document.documentElement.scrollTop;
+  
+      if (scrolled > 0) {
+        navbar.classList.add('navbar-scroll');
+      } else {
+        navbar.classList.remove('navbar-scroll');
+      }
+    });
+        //------------------------------------------------loader-------------------------------
+        window.addEventListener("load", function() {
+          document.querySelector(".loader").style.display = "none";
+        });
+        
+        document.querySelector(".loader").style.display = "block";
+        
+  </script>
+{% endblock content %}

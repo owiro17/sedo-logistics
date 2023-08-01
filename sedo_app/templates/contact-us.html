@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Contact us
+{% endblock title %}
+
+{% block content %}
+    <div class="title-wrapper" id="contact-us-title-wrapper">
+        <h1 data-aos="fade-up"  data-aos-duration="1500" data-aos-easing="ease">Contact Us Below</h1>
+    </div>
+    <div class="error-wrapper">
+        {% if form.errors %}
+            <ul class="errorlist">
+                {% for field in form %}
+                    {% if field.errors %}
+                        <li>{{ field.label }}: {{ field.errors }}</li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+    <div class="error-wrapper">
+        {% for message in messages %}
+          {% if message.tags == 'error' %}
+            <li>{{ message }}</li></div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    <div class="messages-container">
+        {% for message in messages %}
+          {% if message.tags == 'success' %}
+            <div class="success-message">{{ message }}</div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      
+
+    <div class="contact-wrapper">
+        <form action="#" method="POST" id="contact-container">
+            {% csrf_token %}
+            <div class="contact-inputs" data-aos="fade-left">
+                <img src="/sedo_main/sedo_app/static/img/contact_illustrator.svg" alt="contact illustrator" data-aos="fade-right" data-aos-duration="1000">
+                <div class="input-container">
+                    <div class="group" data-aos="fade" data-aos-duration="1000">
+                        {{form.first_name}}
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>First Name</label>
+                    </div>
+                    <div class="group" data-aos="fade" data-aos-duration="1000">
+                        {{form.second_name}}
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Second Name</label>
+                    </div>
+                    <div class="group" data-aos="fade" data-aos-duration="1000">
+                        {{form.email}}
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Email</label>
+                    </div>
+                    <div class="group" data-aos="fade" data-aos-duration="1000">
+                        {{form.phone}}
+                        <!-- <span class="highlight">0712345678</span> -->
+                        <span class="bar"></span>
+                        <label>Phone</label>
+                    </div>
+                    <div class="group" data-aos="fade" data-aos-duration="1000">
+                        {{form.message}}
+                        <label>Message</label>
+                    </div>
+                </div>      
+            </div>
+            <div class="checkbox-inputs">
+
+                <div class="map-container">
+                    <h1 data-aos="fade" data-aos-duration="1000">Where to find us</h1>
+                    <div class="maps" data-aos="fade-right" data-aos-duration="1000">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7834730417067!2d36.836563473087!3d-1.3049942356429296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11db52a5c461%3A0x3bbc625642c74276!2sSedo%20Logistics!5e0!3m2!1sen!2ske!4v1687020788037!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="checkbox-container" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="check-group" data-aos="fade" data-aos-duration="1000">
+                        <label id="labelcheckbox">Road Freight</label>
+                        {{form.road_freight}}
+                    </div>
+                    <div class="check-group" data-aos="fade" data-aos-duration="1000">
+                        <label id="labelcheckbox">Air Freight</label>
+                        {{form.air_freight}}
+                    </div>
+                    <div class="check-group" data-aos="fade" data-aos-duration="1000">
+                        <label id="labelcheckbox">Sea Freight</label>
+                        {{form.sea_freight}}
+                    </div>
+                    <div class="check-group" data-aos="fade" data-aos-duration="1000">
+                        <label id="labelcheckbox">Rail Freight</label>
+                        {{form.rail_freight}}
+                    </div>
+                    <div class="check-group" data-aos="fade" data-aos-duration="1000">
+                        <label id="labelcheckbox">Customs Clearance</label>
+                        {{form.customs_clearance}}
+                    </div>
+                    <div class="check-group" data-aos="fade" data-aos-duration="1000">
+                        <label id="labelcheckbox">Warehouse Management</label>
+                        {{form.warehouse_management}}
+                    </div>
+                    <div class="check-group" data-aos="fade" data-aos-duration="1000">
+                        <label id="labelcheckbox">Project Logistics</label>
+                        {{form.project_logistics}}
+                    </div>
+                    <div class="check-group" data-aos="fade" data-aos-duration="1000">
+                        <label id="labelcheckbox">Cargo Insuarance</label>
+                        {{form.cargo_insuarance}}
+                    </div>
+                    <div class="check-group" data-aos="fade" data-aos-duration="1000">
+                        <label id="labelcheckbox">Removal & Relocation</label>
+                        {{form.remove_relocation}}
+                    </div>
+                    </label>
+                    <input type="submit" text="Submit" class="submit" name="submit">
+                </div>
+                
+
+            </div>    
+
+
+            
+        </form>
+    </div>
+    <script>
+        window.addEventListener('scroll', function() {
+          const navbar = document.getElementById('navbar');
+          const scrolled = window.pageYOffset || document.documentElement.scrollTop;
+      
+          if (scrolled > 0) {
+            navbar.classList.add('navbar-scroll');
+          } else {
+            navbar.classList.remove('navbar-scroll');
+          }
+        });
+            //------------------------------------------------loader-------------------------------
+      window.addEventListener("load", function() {
+        document.querySelector(".loader").style.display = "none";
+      });
+      
+      document.querySelector(".loader").style.display = "block";
+      
+    </script>
+{% endblock content %}

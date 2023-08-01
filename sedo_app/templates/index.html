@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+{% block head %}
+  <meta name="description" content="Sedo Logistics develops comprehensive freight forwarding, project logistics and relocation service plans tailored to meet specific requirements of customers.">
+{% endblock head %}
+{% block title %}Sedo Logistics{% endblock title %}
+
+{% block content %}
+<!-- --------------------------------------home section-------------------------------------- -->
+<section class="home-page-container">
+    <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+              <ul class="splide__list">
+                <!-- ---------------------forwading-slide----------------------------------- -->
+                  <li class="splide__slide">
+                    <div class="slide" id="global-forwading">
+                        <div class="center-container" >
+                            <h1>Global Forwading</h1>
+                            <p>Unlock cost-saving opportunities and optimize your supply chain with our tailored freight forwarding services</p>
+                            <div class="btn-container">
+                                <details>
+                                    <summary>Freight Services</summary>
+                                    <a href="air-freight/">Air freight</a>
+                                    <a href="sea-freight/">Sea freight</a>
+                                    <a href="rail-freight/">Rail freight</a>
+                                    <a href="road-freight/">Road freight</a>
+                                </details>
+
+                            </div>
+                        </div>
+                    </div>
+                  </li>
+                  <!-- ---------------------cargo-slide----------------------------------- -->
+                  <li class="splide__slide">
+                    <div class="slide"  id="cargo-insurance">
+                        <div class="center-container">
+                            <h1>Cargo insuarance</h1>
+                            <p>Simplify cargo insuarance with Sedo Logistics' solutions. Secure coverage for all types of cargo, from household goods to commercial shipments</p>
+                            <div class="btn-container">
+                                <a href="cargo-insuarance/">Cargo insuarance</a>
+                            </div>
+                        </div>
+                    </div>
+                  </li>
+                  <!-- ---------------------warehousing-slide----------------------------------- -->
+                  <li class="splide__slide">
+                    <div class="slide" id="warehousing">
+                        <div class="center-container" >
+                            <h1>Warehousing</h1>
+                            <p>Secure seamless and safe warehousing operations for as long as you deem it necessary</p>
+                            <div class="btn-container">
+                                <a href="warehouse-management/">Warehouse management</a>
+                            </div>
+                        </div>
+                    </div>
+                  </li>
+                  <!-- ---------------------customs-slide----------------------------------- -->
+                  <li class="splide__slide">
+                    <div class="slide" id="customs">
+                        <div class="center-container" >
+                            <h1>Customs Clearance</h1>
+                            <p>Smooth customs clearance and documentation processes for local and international trade</p>
+                            <div class="btn-container">
+                                <a href="customs-clearance/">Customs clearance</a>
+                            </div>
+                        </div>
+                    </div>
+                  </li>
+              </ul>
+        </div>
+      </section>
+</section>
+
+<!-- --------------------------------------about us section------------------------------------- -->
+<section class="about-us-container">
+    <div class="about-us-wrapper" data-aos="fade-right"  data-aos-duration="1000"  data-aos-easing="ease">
+        <div class="about-us-content">
+            <h1 data-aos="fade"  data-aos-duration="1000" data-aos-delay="500" data-aos-easing="ease">Who we are</h1>
+            <p id="typing-text-1"  data-aos="fade"  data-aos-duration="500" data-aos-delay="500" data-aos-easing="ease" >Established in 2010, Sedo logistics is one of the leading international freight forwarding, project logistics and relocation management companies delivering cost-effective solutions throughout Kenya and to many destinations world-wide.</p>
+        </div>
+        <img src="/sedo_main/sedo_app/static/img/who_we_are_illustration.svg" alt=" who we are illustration">
+    </div>
+    <div class="mission-wrapper"data-aos="fade"  data-aos-duration="1000" data-aos-easing="ease">
+        <div class="mission-content">
+            <h1 data-aos="fade"  data-aos-duration="1000" data-aos-delay="500" data-aos-easing="ease">Our mission </h1>
+            <p id="typing-text-2" data-aos="fade"  data-aos-duration="500" data-aos-delay="500" data-aos-easing="ease">Our primary objectives are to promote Total Quality Management and to maintain our success through steady investments in our service expansions and innovations. Our goal is to promote health, safety and environmental policy throughout our organization.</p>
+        </div>
+        <img src="/sedo_main/sedo_app/static/img/mission_illustration.svg" alt=" who we are illustration">
+
+    </div>
+    <div class="vision-wrapper"data-aos="fade-left"  data-aos-duration="1000"  data-aos-easing="ease">
+        <div class="vision-content">
+            <h1 data-aos="fade"  data-aos-duration="1000" data-aos-delay="500" data-aos-easing="ease">Our vision </h1>
+            <p id="typing-text-3" data-aos="fade"  data-aos-duration="500" data-aos-delay="500" data-aos-easing="ease">Our aim is to be the best customer service team in our profession. We strive to develop and maintain a first-class infrastructure to ensure employee satisfaction, which drives customer loyalty leading to sustained profit growth and creating improved company value.</p>
+        </div>
+        <img src="/sedo_main/sedo_app/static/img/vision _illustration.svg" alt=" who we are illustration">
+
+    </div>
+    <a href="/about_us/" id="learn-more-btt">learn more</a>
+</section>
+<!-- --------------------------------------our-services section------------------------------------- -->
+<section class="our-services-container">
+    <h1 data-aos="fade"  data-aos-duration="1500"data-aos-easing="ease">Our Services</h1>
+    <div class="service-cards-wrapper">
+        <div class="service-card" id="air-freight" data-aos="fade-left"  data-aos-duration="500"data-aos-easing="ease">
+            <div class="service-card-mask">
+                <h2 class="service-title" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1500"data-aos-easing="ease">Air Freight</h2>
+                <a href="/ourservices#air-freight-section/" id="air-freight-link" data-aos="fade-up" data-aos-duration="1500"data-aos-easing="ease">Air Freight </a>
+            </div>
+        </div>
+        <div class="service-card" id="road-freight"data-aos="fade"  data-aos-duration="500"data-aos-easing="ease">
+              <div class="service-card-mask">
+                <h2 class="service-title" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1500"data-aos-easing="ease">Road Freight</h2>
+                <a href="/ourservices#road-freight-section/" id="road-freight-link" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500"data-aos-easing="ease">Road Freight </a>
+            </div>
+        </div>
+        <div class="service-card" id="rail-freight"data-aos="fade-right"  data-aos-duration="500"data-aos-easing="ease">
+            <div class="service-card-mask">
+                <h2 class="service-title" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1500"data-aos-easing="ease">Rail Freight</h2>
+                <a href="/ourservices#rail-freight-section/" id="rail-freight-link" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500"data-aos-easing="ease">Rail Freight </a>
+            </div>
+        </div>
+    </div>
+    <a href="#services" onclick="showmenu()" id="see-more">See More</a>
+</section>
+<script>
+    import Splide from '@splidejs/splide'
+    document.addEventListener( 'DOMContentLoaded', function() {
+      var splide = new Splide( '.splide' );
+      splide.mount();
+    } );;
+        //------------------------------------------------loader-------------------------------
+        //------------------------------------------------loader-------------------------------
+        
+    window.addEventListener("load", function() {
+        document.querySelector(".loader").style.display = "none";
+        });
+          
+        document.querySelector(".loader").style.display = "block";
+          
+</script>
+{% endblock content %}

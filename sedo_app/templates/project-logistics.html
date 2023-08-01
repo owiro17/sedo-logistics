@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block head %}
+  <meta name="description" content="Sedo Logistics worldwide network and many years of experience will solve your logistics problem; whether large or small to bring out the potential in your supply chain and save you costs.">
+{% endblock head %}
+{% block title %}
+Project-Logistics
+{% endblock title %}
+
+{% block content %}
+<div class="title-wrapper" id="project-title-wrapper">
+  <h1 data-aos="fade-up"  data-aos-duration="1500" data-aos-easing="ease">Project Logistics</h1>
+  <p>Discover the Untapped Potential of Your Supply Chain and Enhance Its Efficiency</p>
+</div>
+
+<section class="service-wrapper" id="air-service">
+  <div class="service-title">
+    <img src="/sedo_main/sedo_app/static/img/project.jpg" alt="project logistics-logo" class="service-logo">
+    <h1>Project Logistics</h1>
+  
+  </div>
+  <hr>
+  <div class="service-content">
+    <p>Sedo Logistics specializes in project freight management and all associated planning and implementation services, ensuring customer-specific deadlines and special instructions are strictly adhered to. Sedo Logistics specializes in project freight management and planning and implementation services to ensure customer-specific deadlines and special instructions are adhered to.</p>
+
+      <h3>Our Project Logistcs Services Include :</h3> 
+    
+
+      <ul>
+        <li>Customer tailored transportation consultancy</li>
+        <li>Project logistics feasibility studies</li>
+        <li>Road studies</li>
+        <li>Project logistics budget and planning</li>
+        <li>Project flow descriptions</li>
+        <li>Cargo supervision during loading and unloading, as well as in transit</li>
+        <li>Full/Partial charter by ocean and air</li>
+        <li>Consolidation, packing, crating and containerization</li>
+        <li>Purchase order management and cargo tracking</li>
+        <li>Transport Insurance</li>
+        <li>Oversize cargoes transportation</li>
+        <li>Heavy loads</li>
+        <li>Customs and shipping documentation</li>
+      </ul>
+
+      <div class="why-sedo-wrapper">
+        <h1>Why Sedo Logistcs Limited?</h1>
+        <p>Sedo Logistics Limited, a leading customs broker, is primed to meet the increasing demands of the global market. With strong relationships with government agencies, Sedo has the edge in negotiating complex consignments and navigating bureaucratic procedures. Their well-trained staff takes full responsibility for timely and accurate documentation, preventing costly delays and storage charges for consignees. Trust Sedo Logistics Limited for seamless customs clearance and efficient supply chain management.</p>
+        
+      </div>
+  </div>
+
+  <div class="contact-message-wrapper">
+    <h1 class="contact-message">We Are Looking Forward To Working With You</h1>
+    <a href="/contactUs/" class="contact-us-service">Contact Us</a>
+  </div>
+
+
+</section>
+ <script>
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      const scrolled = window.pageYOffset || document.documentElement.scrollTop;
+  
+      if (scrolled > 0) {
+        navbar.classList.add('navbar-scroll');
+      } else {
+        navbar.classList.remove('navbar-scroll');
+      }
+    });
+        //------------------------------------------------loader-------------------------------
+        window.addEventListener("load", function() {
+          document.querySelector(".loader").style.display = "none";
+        });
+        
+        document.querySelector(".loader").style.display = "block";
+        
+  </script>
+{% endblock content %}

@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block tilte %}
+  About Us
+{% endblock tilte %}
+
+{% block content %}
+<section class="about-container">
+  <div class="title-wrapper" id="about-title-wrapper">
+    <h1 data-aos="fade-up"  data-aos-duration="1500" data-aos-easing="ease">About Sedo Logistics</h1>
+  </div>
+  <div class="about-us-page-content">
+    <div class="container" id="about-us-sedo-container">
+      <div class="container-content">
+        <h1 data-aos="fade-up"  data-aos-duration="1500" data-aos-easing="ease">Providing logistics soultion since 2010</h1>
+
+        <p data-aos-delay="1000" data-aos="fade"  data-aos-duration="1500" data-aos-easing="ease">Sedo logistics is one of the leading international freight forwarding, project logistics and relocation management companies delivering cost-effective solutions throughout Kenya and to many destinations world-wide.
+  
+          Sedo Logistics develops comprehensive freight forwarding, project logistics and relocation service plans tailored to meet specific requirements of customers. This is accomplished by learning customer’s exact objectives with regards to their internal and external requirements, thus ensuring that Sedo Logistics will provide quality services more consistently than any other service provider in the market.
+          
+          Our tried and proven multimodal transportation routes worldwide ensure international reach whatever your cargo and timeframe is. As the preferred supplier for various notable companies and the first point of contact to increase supply chain efficiency in Kenya and worldwide, we are very proud of our reputation and always strive to maintain it.
+          
+        </p>
+      </div>
+        <img src="/sedo_main/sedo_app/static/img/old_ship.jpg" alt="image" id="old-ship" >
+    </div>
+
+    <div class="container" id="why-sedo-container">
+      <div class="container-content">
+        <h1 data-aos="fade-up"  data-aos-duration="1500" data-aos-easing="ease">Why sedo logistics</h1>
+        <p data-aos="fade" data-aos-delay="1000"  data-aos-duration="1500" data-aos-easing="ease">Successful freight forwarding, project logistics and relocation management services in challenging markets like Africa, the Middle East and most World destinations require expertise, inside knowledge, and a reputation that businesses can trust. This is why Sedo Logistics is the preferred choice of many successful companies in the region. Our in-depth knowledge of Africa region and Middle East, coupled with our regional and international service network makes Sedo Logistics a leading service provider in the region.
+  
+          Sedo Logistics provides a “one-stop-solution” to meet all of your logistics requirements. Whether you are looking to relocate household goods across the region or move an offshore drilling platform across the seas, Sedo Logistics has the capability, expertise and experience to make it happen. You will get personalized service at every level with Sedo Logistics because we are truly independent, make our own decisions and specialize in our home market
+          </p>
+      </div>
+
+        <img src="/sedo_main/sedo_app/static/img/night_ship.jpg" alt="" id="night-ship" data-aos="fade-right"  data-aos-duration="1500" data-aos-easing="ease">
+    </div>
+    <div class="container" id="mision-vision-conatainer">
+      <div class="mision-container">
+        <h1 data-aos="fade-right"  data-aos-duration="1500" data-aos-easing="ease">Our Everday Mission Is</h1>
+
+        <p data-aos="fade" data-aos-delay="1000"  data-aos-duration="1500" data-aos-easing="ease">To promote Total Quality Management and to maintain our success through steady investments in our service expansions and innovations. Our goal is to promote health, safety and environmental policy throughout our organization.</p>
+      </div>
+      <div class="vision-container">
+        <h1 data-aos="fade-left"  data-aos-duration="1500" data-aos-easing="ease">Our End Goal Is</h1>
+        <p data-aos="fade" data-aos-delay="1000"  data-aos-duration="1500" data-aos-easing="ease">
+          To be the best customer service team in our profession. We strive to develop and maintain a first-class infrastructure to ensure employee satisfaction, which drives customer loyalty leading to sustained profit growth and creating improved company value.</p>
+      </div>
+    </div>
+
+    <div class="container" id="market-position-section">
+      <h1 data-aos="fade-up"  data-aos-duration="1500" data-aos-easing="ease">Our Position In The Market</h1>
+
+      <p data-aos="fade" data-aos-delay="1000" data-aos-duration="1500" data-aos-easing="ease" >We are recognized as one of the most successful independent freight forwarding, project logistics and removal & relocation companies in the region.
+
+        In the transport and logistics market, Sedo Logistics ranks among the top. Publications have cited Sedo Logistics as one of the largest and (in terms of number of offices, employees and wide-ranging service portfolio) most reliable companies in the market.
+        </p>
+    </div>
+  </div>
+  <script>
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      const scrolled = window.pageYOffset || document.documentElement.scrollTop;
+  
+      if (scrolled > 0) {
+        navbar.classList.add('navbar-scroll');
+      } else {
+        navbar.classList.remove('navbar-scroll');
+      }
+    });
+        //------------------------------------------------loader-------------------------------
+        window.addEventListener("load", function() {
+          document.querySelector(".loader").style.display = "none";
+        });
+        
+        document.querySelector(".loader").style.display = "block";
+        
+  </script>
+</section>
+{% endblock content %}
